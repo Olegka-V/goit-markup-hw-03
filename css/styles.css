@@ -175,8 +175,6 @@ img{
 .header-container{
     display: flex;
     justify-content: space-between;
-    padding: 24px 0;
-    
 }
 
 
@@ -193,6 +191,7 @@ img{
 .navigation .list{
     display: flex;
     gap: 40px;
+    padding: 24px 0ж
 }
 
 .navigation .list .link{
@@ -205,8 +204,17 @@ img{
 }
 
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .benefits-list{
@@ -228,13 +236,17 @@ img{
     margin-bottom: 72px;
 }
 
-.team-container .list{
+.team-container .title{
+    margin-bottom: 8px;
+}
+
+.team-container-list{
     display: flex;
     gap: 24px;
     padding-bottom: 32px;
 }
 
-.team-container .list .item {
+.team-container-list .item {
     padding-bottom: 32px;
     border-radius: 0px 0px 4px 4px;
     background:  #FFF;
