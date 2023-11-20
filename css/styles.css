@@ -203,19 +203,6 @@ img{
     gap: 40px;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
 
 .benefits-list{
     display: flex;
@@ -228,7 +215,7 @@ img{
     flex-basis: calc((100% - 72px) / 4);
 }
 
-.benefits-list-link .subtitle{
+.benefits-list-item .subtitle{
     margin-bottom: 8px;
 }
 
@@ -237,7 +224,7 @@ img{
 }
 
 .team-container .title{
-    margin-bottom: 8px;
+    margin-bottom: 72px;
 }
 
 .team-container-list{
@@ -297,4 +284,18 @@ img{
 
 .basement-container .logo{
     margin-bottom: 16px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
